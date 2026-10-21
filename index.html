@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!-- 宣告使用 HTML5；DOCTYPE 是文件類型宣告，不需要結束標籤。 -->
+<html lang="zh-Hant">
+<!-- html 包住整份文件；lang="zh-Hant" 表示主要使用繁體中文。 -->
+<head>
+    <!-- head 放網頁資訊；這些資訊不會直接成為頁面中的報導文字。 -->
+    <meta charset="UTF-8">
+    <!-- UTF-8 可正確處理中文；meta 是空元素，不寫結束標籤。 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- viewport 讓行動裝置使用裝置寬度；不代表固定寬度的圖片會自動縮小。 -->
+    <meta name="description" content="走進台中公園，認識百年歷史、湖心亭與日月湖，透過清單、表格、照片和影片閱讀城市故事。">
+    <!-- description 提供網頁摘要；author 標示作者。 -->
+    <meta name="author" content="HTML 課程示範作者">
+    <title>台中公園報導｜城市裡的百年風景</title>
+    <!-- title 顯示在瀏覽器分頁；與 body 中的 h1 用途不同。 -->
+</head>
+
+<body>
+    <!--
+        第四次作業：一頁式台中公園報導。
+        本範例僅使用 HTML，保留瀏覽器預設呈現，不加入 CSS 或 JavaScript。
+        註解使用「小於符號、驚嘆號、兩個連字號」開始，並以兩個連字號及大於符號結束。
+        註解不會顯示於網頁，但讀者可從原始碼看見，因此不要放私人資料。
+        使用一致的四個空格縮排；成對標籤都明確寫出結束標籤。
+    -->
+
+    <!-- header 是頁首；id="top" 是下方「回到頁首」連結的目的地。 -->
+    <header id="top">
+        <!-- h1 是本頁主標題；h2 用於各章節，依內容階層選用標題。 -->
+        <h1>台中第二市場：百年六角樓下的常民美味</h1>
+        <p>從六角樓歷史到排隊古早味，一起品味台中舊城區的百年記憶。</p>
+        <!-- time 的 datetime 以標準日期格式提供機器可讀的日期。 -->
+        <p>作者：林柔吟｜報導整理日期：<time datetime="2026-10-08">2026 年 10 月 8 日</time></p>
+        <p><small>本文為資料整理型教學報導，非現場採訪紀錄。</small></p>
+    </header>
+
+    <!-- nav 表示導覽區；href="#名稱" 會跳到本頁相同 id 的元素。 -->
+    <nav aria-label="報導目錄">
+        <h2>報導目錄</h2>
+        <ul>
+            <li><a href="#intro">市場簡介</a></li>
+            <li><a href="#highlights">景點特色與走訪順序</a></li>
+            <li><a href="#table">美食走訪表</a></li>
+            <li><a href="#photo">六角樓照片</a></li>
+            <li><a href="#video">影音報導</a></li>
+            <li><a href="#sources">資料來源</a></li>
+        </ul>
+    </nav>
+
+    <!-- hr 表示內容主題的分隔，也是沒有結束標籤的空元素。 -->
+    <hr>
+
+    <!-- main 包住本頁主要內容；article 表示可獨立閱讀的完整報導。 -->
+    <main>
+        <article aria-label="第二市場專題報導">
+            <!-- section 將報導分成有標題的章節；同一頁中的 id 不可重複。 -->
+            <section id="intro">
+                <h2>一、市場簡介</h2>
+                <!-- p 表示段落；strong 強調重要資訊，不用來取代標題。 -->
+                <p>
+                    台中市公有第二零售市場（簡稱第二市場）位於台中市中區，自 <strong>1917 年</strong>開設以來，
+                成為市民認識城市歷史與常民飲食文化的重要據點。市場內結合歷史建築、傳統市集與在地老字號美食，讓人能在老城漫步中找到穿梭時光的體驗。
+                </p>
+                <p>
+                    場內最具代表性的景點是第二市場中的<strong>六角樓</strong>。
+                   這座建築建於日治時期，以六角形為中心向外放射出通道，兼具通風、採光與治安管理功能，
+                    後來被登錄為台中市歷史建築，也是台中最具特色的市場地標之一。
+                </p>
+                <p>
+                    從六角樓的建築工藝到代代相傳的排隊小吃，第二市場就像一份可以慢慢品嚐與閱讀的城市筆記。
+                    本篇以建築特色與建議走訪順序，介紹這座百年市場。
+                </p>
+                <!-- br 僅用於同段文字中需要的換行；不要用很多 br 製造間距。 -->
+                <p>公園地址：台中市中區三民路二段 87 號。<br>閱讀重點：歷史建築、放射狀街廊與傳統市場美食。</p>
+            </section>
+
+            <section id="highlights">
+                <h2>二、景點特色與走訪順序</h2>
+                <h3>值得留意的三個特色</h3>
+                <!-- ul 是無序清單；li 是個別項目，適合不分先後的資訊。 -->
+                <ul>
+                    <li><strong>歷史建築：</strong>六角樓串聯了日治新富町市場的百年規劃歷史。</li>
+                    <li><strong>放射格局：</strong>以六角樓為核心向外延伸的六條通道，形成獨特的市場動線。</li>
+                    <li><strong>常民美食：</strong>場內匯聚傳承數十年的傳統小吃，展現深厚的在地飲食文化。</li>
+                </ul>
+
+                <h3>建議走訪順序</h3>
+                <p>以下是本報導規劃的散步建議，並非官方指定路線。</p>
+                <!-- ol 是有序清單；瀏覽器會依 li 的排列產生編號。 -->
+                <ol>
+                    <li>進入市場後，先閱讀現場導覽地圖，確認各出入口與重要攤位位置。</li>
+                    <li>走到六角樓中心，仰望六角天井結構與歷史展陳。</li>
+                    <li>前往排隊小吃街一帶，品嚐古早味美食並觀察市場活力。</li>
+                    <li>沿外圍生鮮乾貨區散步，最後在周邊老街區整理今日的觀察。</li>
+                </ol>
+            </section>
+
+            <section id="table">
+                <h2>三、特色空間比較表</h2>
+                <!--
+                    table 用於呈現資料，不用來排版整個網頁。
+                    本作業維持純 HTML，表格沒有額外的框線樣式。
+                    不使用已過時的 border、cellpadding、cellspacing 屬性。
+                -->
+                <table border="1">
+                    <!-- caption 是表格標題，放在 table 內最前面。 -->
+                    <caption>第二市場三處景點的特色與觀察重點</caption>
+                    <!-- thead 包住表頭；tr 是一橫列；th 是標題儲存格。 -->
+                    <thead>
+                        <tr>
+                            <!-- scope="col" 表示這個 th 是整欄的標題。 -->
+                            <th scope="col">景點名稱</th>
+                            <th scope="col">主要特色</th>
+                            <th scope="col">建議觀察重點</th>
+                        </tr>
+                    </thead>
+                    <!-- tbody 包住資料列；td 是一般資料儲存格。 -->
+                    <tbody>
+                        <tr>
+                            <!-- scope="row" 表示這個 th 是本列的標題。 -->
+                            <th scope="row">六角樓</th>
+                            <td>建於 1917 年的歷史建築核心</td>
+                            <td>六角形放射狀格局與二樓歷史解說展區</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">美食街通道</th>
+                            <td>匯聚滷肉飯、菜頭粿等老字號小吃</td>
+                            <td>老攤招牌、排隊動線與傳統飲食氛圍</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">傳統生鮮街廊</th>
+                            <td>保留早期市集販售蔬果魚肉的紋理</td>
+                            <td>木質與水泥攤台結構及市井人情交流</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="photo">
+                <h2>四、六角樓照片</h2>
+                <!-- figure 將圖片與圖說組成一個單位；figcaption 是圖說。 -->
+                <figure>
+                    <!--
+                        img 是空元素，不寫 /img 結束標籤。
+                        src 指定圖片網址；本範例使用外部圖片，需要連線才能載入。
+                        alt 描述照片內容，圖片未載入時或使用螢幕閱讀器時仍可理解。
+                        width 控制顯示寬度；未指定 height，瀏覽器依原圖比例顯示。
+                    -->
+                    <img
+                        src="https://travel.taichung.gov.tw/Image/31548?r=637837893158196659"
+                        alt="第二市場中的六角樓"
+                        width="480">
+                    <figcaption>
+                        六角樓是第二市場的重要地標。
+                        圖片來源：<a href="https://travel.taichung.gov.tw/zh-tw/attractions/intro/70">第二市場 - 臺中觀光旅遊網頁面</a>。
+                    </figcaption>
+                </figure>
+            </section>
+
+            <section id="video">
+                <h2>五、影音報導</h2>
+                <p>透過下方影片認識第二市場與六角樓，再比較影片畫面與本文介紹的景點。</p>
+                <!--
+                    iframe 將 YouTube 播放器嵌入本頁，需要明確的結束標籤。
+                    src 使用 /embed/影片ID，不是一般的 /watch?v=影片ID 網址。
+                    width、height 設定播放器尺寸；title 說明嵌入內容。
+                    allow 開放所列功能；allowfullscreen 允許全螢幕播放。
+                    referrerpolicy 保留跨站來源資訊；仍須由瀏覽器提供有效來源。
+                    直接開本機檔案時，YouTube 可能因缺少 HTTP Referer 而出現錯誤 153。
+                    若發生此情況，請用本機 HTTP 伺服器預覽，或使用下方原始影片連結。
+                    播放也取決於網路、YouTube 及發布者的嵌入設定。
+                -->
+                <iframe
+                    <iframe width="560" 
+                    height="315"
+                    src="https://www.youtube.com/embed/0qUhpJz93VM?si=OKsBSFXuImyy9Ofx" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+                </iframe>
+                <!-- a 提供一般影片連結；播放器無法播放時仍能前往 YouTube。 -->
+                <p>
+                    若播放器無法播放，請
+                    <a href="https://youtu.be/0qUhpJz93VM?si=7Dkl0ySuOFZ986Uc" target="_blank" rel="noopener noreferrer">在 YouTube 觀看六角樓介紹影片（另開分頁）</a>。
+                </p>
+                <p><small>影片為外部作者發布的歷史介紹，現場狀況請以最新官方資訊為準。</small></p>
+            </section>
+
+            <section id="sources">
+                <h2>六、位置地圖：找到台中第二市場</h2>
+                <p>台中第二市場位於台中市中區，地址為<strong>大墩里三民路二段87號</strong>。
+                    下方地圖標示本文介紹的市場位置，方便讀者對照景點與周邊街道。</p>
+                <!--
+                    Google 地圖以座標定位，q 指定緯度 24.144818、經度 120.68447，output=embed 回傳嵌入版。
+                    網址的 & 在 HTML 中寫成 &amp;。不需在本教學檔放入 API 金鑰。
+                    title 說明地圖用途；loading="lazy" 延後載入較下方的外部內容。
+                    iframe 必須寫結束標籤；width 與 height 設定顯示尺寸。
+                    地圖需連網；另提供一般地圖連結，載入失敗時仍可開啟。
+                -->
+                <iframe
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d910.2087459846593!2d120.67811542844457!3d24.142432622445376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d12ca93cb15%3A0xbd0f6a8f559b6d54!2z6Ie65Lit5biC5YWs5pyJ56ys5LqM6Zu25ZSu5biC5aC0!5e0!3m2!1szh-TW!2stw!4v1792567833539!5m2!1szh-TW!2stw" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy"
+                     referrerpolicy="strict-origin-when-cross-origin">
+              </iframe>
+                <p><a href=https://maps.app.goo.gl/CEQcDArgSi2mMaYq9 target="_blank" rel="noopener noreferrer">在 Google 地圖開啟台中第二市場（另開分頁）</a></p>
+                <p><small>位置查詢由 Google 地圖提供；抵達後請依現場導覽牌確認入口與步道。</small></p>
+            </section>
+            <hr>
+
+            <aside id="tips" aria-labelledby="tips-title">
+                <h2 id="tips-title">七、走讀小提醒</h2>
+                <details open>
+                    <summary>出發前與走讀時，記得這三件事</summary>
+                    <ul>
+                        <li>攜帶飲用水，依天氣準備防曬或雨具。</li>
+                        <li>在市場留意安全，尊重古蹟並保持環境整潔。</li>
+                        <li>以文字或照片記錄觀察；若寫入報導，區分現場觀察與引用資料。</li>
+                    </ul>
+                </details>
+            </aside>
+            <hr>
+            <section id="sources">
+                <h2>八、資料來源</h2>
+                <p>本報導依下列資料整理，散步順序與觀察建議由示範作者規劃。</p>
+                <!--
+                    target="_blank" 另開分頁；rel 保護開啟新頁面的關聯。
+                    網址中的 & 在 HTML 原始碼中寫成 &amp;。
+                -->
+                <ul>
+                    <li><a href=https://vocus.cc/article/695f8450fd897800019be7d1" target="_blank" rel="noopener noreferrer">bravejim的生活日常紀錄</a></li>
+                    <li><a href="https://travel.taichung.gov.tw/zh-tw/attractions/intro/70" target="_blank" rel="noopener noreferrer">第二市場 - 臺中觀光旅遊網</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=0qUhpJz93VM" target="_blank" rel="noopener noreferrer">YouTube：台中第二市場和六角樓介紹影片</a></li>
+                </ul>
+                <p><small>資料整理日期：2026 年 10 月 14 日。</small></p>
+            </section>
+        </article>
+    </main>
+
+    <hr>
+    <!-- footer 是頁尾；來源與作者標示應依自己的作品修改。 -->
+    <footer>
+        <p>第五次 HTML 作業範例｜台中第二市場報導</p>
+        <p><a href="#top">回到頁首</a></p>
+    </footer>
+</body>
+</html>
